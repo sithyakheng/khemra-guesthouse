@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #faf3e6;
+  --color-cream-deep: #f0e6d2;
+  --color-clay: #c1592d;
+  --color-clay-deep: #a1451f;
+  --color-rice: #3d6b57;
+  --color-rice-light: #557d6b;
+  --color-gold: #d9a441;
+  --color-ink: #2b2118;
+  --color-ink-soft: #5c5041;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-deep: var(--color-cream-deep);
+  --color-clay: var(--color-clay);
+  --color-clay-deep: var(--color-clay-deep);
+  --color-rice: var(--color-rice);
+  --color-rice-light: var(--color-rice-light);
+  --color-gold: var(--color-gold);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --font-display: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "Cascadia Code", Consolas, "Courier New", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--color-clay);
+  color: var(--color-cream);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
