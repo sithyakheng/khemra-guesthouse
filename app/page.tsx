@@ -50,7 +50,7 @@ export default function Home() {
                 href={`tel:${hotel.phone1.replace(/\s/g, "")}`}
                 className="group inline-flex items-center gap-2 rounded-full bg-clay px-7 py-3.5 font-mono text-xs uppercase tracking-[0.15em] text-cream transition-transform hover:-translate-y-0.5"
               >
-                Check availability
+                Call {hotel.phone1}
                 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
               </a>
               <Link
