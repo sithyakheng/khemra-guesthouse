@@ -66,13 +66,8 @@ export const rooms: Room[] = [
 
 export const amenities = [
   { label: "Free Wi-Fi", icon: "wifi" },
-  { label: "Free parking", icon: "car" },
-  { label: "Pool", icon: "waves" },
-  { label: "Air-conditioned", icon: "wind" },
-  { label: "Laundry service", icon: "shirt" },
-  { label: "Pet-friendly", icon: "paw" },
-  { label: "Restaurant", icon: "utensils" },
-  { label: "River terrace", icon: "sun" },
+  { label: "Air-Conditioned", icon: "wind" },
+  { label: "Pet-Friendly", icon: "paw" },
   { label: "Conference Hall", icon: "presentation" },
 ];
 

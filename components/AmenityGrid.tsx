@@ -1,12 +1,7 @@
 import {
   Wifi,
-  Car,
-  Waves,
   Wind,
-  Shirt,
   PawPrint,
-  Utensils,
-  Sun,
   Presentation,
   type LucideIcon,
 } from "lucide-react";
@@ -14,13 +9,8 @@ import { amenities } from "@/lib/data";
 
 const iconMap: Record<string, LucideIcon> = {
   wifi: Wifi,
-  car: Car,
-  waves: Waves,
   wind: Wind,
-  shirt: Shirt,
   paw: PawPrint,
-  utensils: Utensils,
-  sun: Sun,
   presentation: Presentation,
 };
 
