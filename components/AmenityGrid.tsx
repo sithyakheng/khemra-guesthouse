@@ -1,4 +1,15 @@
-import { Wifi, Car, Waves, Wind, Shirt, PawPrint, Utensils, Sun, type LucideIcon } from "lucide-react";
+import {
+  Wifi,
+  Car,
+  Waves,
+  Wind,
+  Shirt,
+  PawPrint,
+  Utensils,
+  Sun,
+  Presentation,
+  type LucideIcon,
+} from "lucide-react";
 import { amenities } from "@/lib/data";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -10,6 +21,7 @@ const iconMap: Record<string, LucideIcon> = {
   paw: PawPrint,
   utensils: Utensils,
   sun: Sun,
+  presentation: Presentation,
 };
 
 export default function AmenityGrid() {
