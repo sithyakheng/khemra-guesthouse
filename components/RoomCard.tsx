@@ -1,5 +1,5 @@
-import type { Room } from "@/lib/data";
-import { Check } from "lucide-react";
+import { hotel, type Room } from "@/lib/data";
+import { Check, Phone } from "lucide-react";
 import Image from "next/image";
 
 export default function RoomCard({ room, index }: { room: Room; index: number }) {
@@ -22,12 +22,7 @@ export default function RoomCard({ room, index }: { room: Room; index: number })
       </div>
 
       <div className="p-6">
-        <div className="flex items-baseline justify-between gap-4">
-          <h3 className="font-display text-xl text-ink">{room.name}</h3>
-          <p className="font-mono text-sm text-clay whitespace-nowrap">
-            ${room.priceFrom}–{room.priceTo}
-          </p>
-        </div>
+        <h3 className="font-display text-xl text-ink">{room.name}</h3>
         <p className="mt-3 text-sm leading-relaxed text-ink-soft">{room.description}</p>
         <ul className="mt-4 grid grid-cols-2 gap-2">
           {room.features.map((f) => (
@@ -37,6 +32,13 @@ export default function RoomCard({ room, index }: { room: Room; index: number })
             </li>
           ))}
         </ul>
+        <a
+          href={`tel:${hotel.phone1.replace(/\s/g, "")}`}
+          className="mt-6 inline-flex items-center gap-2 rounded-full bg-clay px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-cream transition-transform hover:-translate-y-0.5"
+        >
+          <Phone className="h-3.5 w-3.5" />
+          Book Now
+        </a>
       </div>
     </div>
   );
