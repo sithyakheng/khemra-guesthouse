@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import TerraceMotif from "@/components/TerraceMotif";
 import { hotel } from "@/lib/data";
 
@@ -12,6 +13,16 @@ export default function AboutPage() {
         <h1 className="font-display text-4xl text-ink md:text-5xl mb-8">
           Family-run, three minutes from the river
         </h1>
+
+        <div className="relative mb-10 aspect-[16/9] overflow-hidden rounded-2xl border border-clay/20">
+          <Image
+            src="https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/building%20photo%20.jpg"
+            alt="Khemra Guesthouse exterior"
+            fill
+            sizes="(min-width: 768px) 768px, 100vw"
+            className="object-cover"
+          />
+        </div>
 
         <div className="space-y-6 text-ink-soft leading-relaxed">
           <p>

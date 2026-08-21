@@ -25,6 +25,7 @@ export type Room = {
   priceTo: number;
   description: string;
   features: string[];
+  image: string;
 };
 
 export const rooms: Room[] = [
@@ -37,6 +38,7 @@ export const rooms: Room[] = [
     description:
       "Simple, tiled room with traditional Khmer furnishings and a ceiling fan. Straightforward and easy on the wallet, a 3-minute walk from Kampot Riverside.",
     features: ["Fan cooled", "Private bathroom", "Hot water", "Free Wi-Fi"],
+    image: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/1%20bed%20%20(2).jpg",
   },
   {
     slug: "air-con-room",
@@ -47,6 +49,7 @@ export const rooms: Room[] = [
     description:
       "Air-conditioned room with satellite TV and tiled flooring, close to the family restaurant downstairs — good for guests who want a bit more comfort.",
     features: ["Air-conditioned", "Satellite TV", "Private bathroom", "Free Wi-Fi"],
+    image: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/2%20bed%20%20(2).jpg",
   },
   {
     slug: "terrace-view-room",
@@ -57,6 +60,7 @@ export const rooms: Room[] = [
     description:
       "Upper-floor room looking out over the large terrace toward the Kampot River and Bokor Mountain — the best view in the house.",
     features: ["Air-conditioned", "River view", "Satellite TV", "Balcony access", "Free Wi-Fi"],
+    image: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/3%20bed%20.jpg",
   },
 ];
 
@@ -69,6 +73,50 @@ export const amenities = [
   { label: "Pet-friendly", icon: "paw" },
   { label: "Restaurant", icon: "utensils" },
   { label: "River terrace", icon: "sun" },
+  { label: "Conference Hall", icon: "presentation" },
+];
+
+export const galleryImages = [
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/amenities%20%20(1).jpg",
+    label: "Guest Room Amenities",
+    category: "Amenities",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/amenities%20%20(2).jpg",
+    label: "Guest Room Amenities",
+    category: "Amenities",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/amenities%20.jpg",
+    label: "Guest Room Amenities",
+    category: "Amenities",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/building%20photo%20.jpg",
+    label: "Property Exterior",
+    category: "Exterior",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/meeting%20room%20%20(2).jpg",
+    label: "Conference Hall",
+    category: "Events",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/meeting%20room%20%20(3).jpg",
+    label: "Conference Hall",
+    category: "Events",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/meeting%20room%20%20(5).jpg",
+    label: "Conference Hall",
+    category: "Events",
+  },
+  {
+    url: "https://krkkglikurxisofklznv.supabase.co/storage/v1/object/public/gallery/meeting%20room%20.jpg",
+    label: "Conference Hall",
+    category: "Events",
+  },
 ];
 
 export const nav = [
