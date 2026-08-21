@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Phone, Mail, Share2, MapPin, Clock, Globe } from "lucide-react";
-import ContactForm from "@/components/ContactForm";
 import { hotel } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Contact — Khemra Guesthouse" };
@@ -9,12 +8,12 @@ export default function ContactPage() {
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(hotel.mapsEmbedQuery)}&output=embed`;
 
   return (
-    <div className="mx-auto max-w-6xl px-6 py-20">
+    <div className="mx-auto max-w-2xl px-6 py-20">
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-clay mb-3">Contact</p>
       <h1 className="font-display text-4xl text-ink md:text-5xl max-w-xl mb-14">Get in touch</h1>
 
-      <div className="grid gap-12 lg:grid-cols-5">
-        <div className="lg:col-span-2 space-y-8">
+      <div className="space-y-8">
+        <div className="space-y-8">
           <ul className="space-y-5">
             <li className="flex items-start gap-3">
               <MapPin className="h-5 w-5 text-clay shrink-0 mt-0.5" />
@@ -64,10 +63,6 @@ export default function ContactPage() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-        </div>
-
-        <div className="lg:col-span-3">
-          <ContactForm />
         </div>
       </div>
     </div>
